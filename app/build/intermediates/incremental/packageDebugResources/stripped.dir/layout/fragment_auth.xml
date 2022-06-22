@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.MainActivity"
+    android:orientation="horizontal"
+    android:background="@drawable/back_of_auth1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingRight="35dp"
+        android:paddingLeft="35dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_of_form_to_auth"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:paddingLeft="37dp"
+            android:paddingRight="37dp"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/monsterbig"
+                android:text="Спасибо!"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monster"
+                android:text="Подождите минутку,
+                 пока мы готовим ваш "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterbig"
+                android:text="PsyPlan..."
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

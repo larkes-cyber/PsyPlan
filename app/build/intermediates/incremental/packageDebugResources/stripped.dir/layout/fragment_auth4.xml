@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_auth4"
+    tools:context=".presentation.fragment.AuthFragment4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_of_form_to_auth"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:paddingLeft="37dp"
+            android:paddingRight="37dp"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monster"
+                android:text="Если это приложение предложил вам специалист, у которого вы наблюдаетесь, напишите его  "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monsterbig"
+                android:text="индивидуальный код специалиста:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_to_inp_of_auth"
+                android:textColor="@color/forContinueButton"
+                android:hint="Иван"
+                android:id="@+id/code"
+                android:textColorHint="@color/forContinueButton"
+                android:textSize="16sp"
+                android:fontFamily="@font/monster"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingTop="17dp"
+                android:paddingBottom="17dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monster"
+                android:id="@+id/error"
+                android:visibility="gone"
+                android:text="Некорректные данные"
+                android:textColor="#DFA1A1"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-5dp"
+                android:textSize="14sp" />
+           <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+               android:id="@+id/button"
+            android:background="@drawable/button_to_continue"
+            android:drawableRight="@drawable/arr"
+            android:fontFamily="@font/monster"
+            android:paddingLeft="27dp"
+            android:paddingRight="32dp"
+            style="@style/Button.Color"
+            android:paddingTop="14dp"
+               android:paddingBottom="14dp"
+            android:text="Продолжить"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

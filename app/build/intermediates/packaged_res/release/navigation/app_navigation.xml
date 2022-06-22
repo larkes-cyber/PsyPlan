@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigatoin"
+    app:startDestination="@id/signInOrAuth">
+    <fragment
+        android:id="@+id/authFragment14"
+        android:name="lolka.example.PsyPath.presentation.fragment.AuthFragment1"
+        android:label="AuthFragment1" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_authFragment14_to_whoAreYouFragment2"
+            app:destination="@id/whoAreYouFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment22"
+        android:name="lolka.example.PsyPath.presentation.fragment.AuthFragment2"
+        android:label="fragment_auth2"
+        tools:layout="@layout/fragment_auth2" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="whoAreYou"
+            app:argType="string" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_authFragment22_to_omsAndDmsFragment"
+            app:destination="@id/omsAndDmsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment32"
+        android:name="lolka.example.PsyPath.presentation.fragment.AuthFragment3"
+        android:label="fragment_auth3"
+        tools:layout="@layout/fragment_auth3" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_authFragment32_to_authFragment43"
+            app:destination="@id/authFragment43" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="birthday"
+            app:argType="string" />
+        <argument
+            android:name="hill"
+            app:argType="string" />
+        <argument
+            android:name="count"
+            app:argType="string"
+            android:defaultValue="4" />
+        <argument
+            android:name="whoAreYou"
+            app:argType="string" />
+        <argument
+            android:name="oms"
+            app:argType="string" />
+        <argument
+            android:name="dms"
+            app:argType="string" />
+        <argument
+            android:name="disease"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment43"
+        android:name="lolka.example.PsyPath.presentation.fragment.AuthFragment4"
+        android:label="fragment_auth4"
+        tools:layout="@layout/fragment_auth4" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_authFragment43_to_authFragment53"
+            app:destination="@id/authFragment53" />
+        <argument
+            android:name="birthday"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="hill"
+            app:argType="string" />
+        <argument
+            android:name="count"
+            app:argType="string"
+            android:defaultValue="0" />
+        <argument
+            android:name="codeOfExpert"
+            app:argType="string" />
+        <argument
+            android:name="whoAreYou"
+            app:argType="string" />
+        <argument
+            android:name="oms"
+            app:argType="string" />
+        <argument
+            android:name="dms"
+            app:argType="string" />
+        <argument
+            android:name="disease"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment53"
+        android:name="lolka.example.PsyPath.presentation.fragment.AuthFragment5"
+        android:label="fragment_auth5"
+        tools:layout="@layout/fragment_auth5" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_authFragment53_to_authFragment6"
+            app:destination="@id/authFragment6" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="birthday"
+            app:argType="string" />
+        <argument
+            android:name="hill"
+            app:argType="string" />
+        <argument
+            android:name="count"
+            app:argType="string"
+            android:defaultValue="0" />
+        <argument
+            android:name="codeOfExpert"
+            app:argType="string" />
+        <argument android:name="pass"
+            app:argType="string" />
+        <argument
+            android:name="contact"
+            app:argType="string" />
+        <argument
+            android:name="whoAreYou"
+            app:argType="string" />
+        <argument
+            android:name="dms"
+            app:argType="string" />
+        <argument
+            android:name="oms"
+            app:argType="string" />
+        <argument
+            android:name="disease"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment6"
+        android:name="lolka.example.PsyPath.presentation.fragment.AuthFragment"
+        android:label="AuthFragment" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="birthday"
+            app:argType="string" />
+        <argument
+            android:name="hill"
+            app:argType="string" />
+        <argument
+            android:name="count"
+            app:argType="string"
+            android:defaultValue="0" />
+        <argument
+            android:name="codeOfExpert"
+            app:argType="string" />
+        <argument
+            android:name="pass"
+            app:argType="string" />
+        <argument
+            android:name="contact"
+            app:argType="string" />
+        <argument
+            android:name="whoAreYou"
+            app:argType="string" />
+        <argument
+            android:name="oms"
+            app:argType="string" />
+        <argument
+            android:name="dms"
+            app:argType="string" />
+        <argument
+            android:name="disease"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_authFragment6_to_emptyFragment"
+            app:destination="@id/emptyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInOrAuth"
+        android:name="lolka.example.PsyPath.presentation.fragment.SignInOrAuth"
+        android:label="fragment_sign_in_or_auth"
+        tools:layout="@layout/fragment_sign_in_or_auth" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_signInOrAuth_to_authFragment14"
+            app:destination="@id/authFragment14" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_signInOrAuth_to_signIn1"
+            app:destination="@id/signIn1" />
+        <action
+            android:id="@+id/action_signInOrAuth_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signIn1"
+        android:name="lolka.example.PsyPath.presentation.fragment.SignIn1"
+        android:label="SignIn1" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_signIn1_to_authFragment6"
+            app:destination="@id/authFragment6" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="lolka.example.PsyPath.presentation.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_mainFragment_to_stateFragment"
+            app:destination="@id/stateFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_mainFragment_to_setupChatFragment"
+            app:destination="@id/setupChatFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_mainFragment_to_meetingWithDoctorFragment"
+            app:destination="@id/meetingWithDoctorFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_mainFragment_to_happyFragment"
+            app:destination="@id/happyFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_mainFragment_to_profileOfPatientFragment"
+            app:destination="@id/profileOfPatientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stateFragment"
+        android:name="lolka.example.PsyPath.presentation.fragment.StateFragment"
+        android:label="fragment_state"
+        tools:layout="@layout/fragment_state" >
+        <action
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_stateFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setupChatFragment"
+        android:name="lolka.example.PsyPath.presentation.fragment.SetupChatFragment"
+        android:label="fragment_setup_chat"
+        tools:layout="@layout/fragment_setup_chat" >
+        <action
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_setupChatFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_setupChatFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/meetingWithDoctorFragment"
+        android:name="lolka.example.PsyPath.presentation.fragment.MeetingWithDoctorFragment"
+        android:label="fragment_meeting_with_doctor"
+        tools:layout="@layout/fragment_meeting_with_doctor" >
+        <action
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_meetingWithDoctorFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/happyFragment"
+        android:name="lolka.example.PsyPath.presentation.fragment.HappyFragment"
+        android:label="fragment_happy"
+        tools:layout="@layout/fragment_happy" >
+        <action
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_happyFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="lolka.example.PsyPath.presentation.fragment.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_chatFragment_to_setupChatFragment"
+            app:destination="@id/setupChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileOfPatientFragment"
+        android:name="lolka.example.PsyPath.presentation.fragment.ProfileOfPatientFragment"
+        android:label="fragment_profile_of_patient"
+        tools:layout="@layout/fragment_profile_of_patient" >
+        <action
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_profileOfPatientFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/whoAreYouFragment2"
+        android:name="lolka.example.PsyPath.presentation.fragment.WhoAreYouFragment"
+        android:label="fragment_who_are_you"
+        tools:layout="@layout/fragment_who_are_you" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_whoAreYouFragment2_to_authFragment22"
+            app:destination="@id/authFragment22" />
+        <argument
+            android:name="whoAreYou"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/omsAndDmsFragment"
+        android:name="lolka.example.PsyPath.presentation.fragment.OmsAndDmsFragment"
+        android:label="OmsAndDmsFragment" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_omsAndDmsFragment_to_authFragment32"
+            app:destination="@id/authFragment32" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="oms"
+            app:argType="string" />
+        <argument
+            android:name="dms"
+            app:argType="string" />
+        <argument
+            android:name="whoAreYou"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="lolka.example.PsyPath.presentation.fragment.EmptyFragment"
+        android:label="fragment_empty"
+        tools:layout="@layout/fragment_empty" >
+        <action
+
+            android:id="@+id/action_emptyFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

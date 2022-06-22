@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background = "@drawable/back_of_state"
+    tools:context=".presentation.fragment.HappyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="8"
+            android:fontFamily="@font/semiboldmonster"
+            android:gravity="center"
+            android:text="Настроение сегодня:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/for_states_fragments"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_baseline_star_24"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_baseline_star_24"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_baseline_star_24"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_baseline_star_24"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_baseline_star_24"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:fontFamily="@font/semiboldmonster"
+        android:gravity="center"
+        android:layout_margin="17dp"
+        android:text="Ваше настроение за последний месяц:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:background="@drawable/grap"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:fontFamily="@font/semiboldmonster"
+        android:gravity="center"
+        android:layout_margin="17dp"
+        android:text="Выберете настроение"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/p1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/p2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/p3"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/p4"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/p5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/p6"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

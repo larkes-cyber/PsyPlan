@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.135" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable-v24/message_other.xml" value="0.177" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable-v24/second_day.xml" value="0.18" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable-v24/third_day.xml" value="0.18" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/back_for_state.xml" value="0.102" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/back_for_typing.xml" value="0.1245" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/back_for_view.xml" value="0.102" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/back_of_form_to_auth.xml" value="0.1" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/back_to_inp_of_auth.xml" value="0.178" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/but_plus.xml" value="0.172" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/button_to_continue.xml" value="0.241" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/down_tools.xml" value="0.1985" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/first_day.xml" value="0.179" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/for_states_fragments.xml" value="0.178" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.252" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/main_container.xml" value="0.103" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/message.xml" value="0.1245" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/plan_of_rec.xml" value="0.179" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/drawable/time_of_plan.xml" value="0.18" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/font/fonts.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout-land/fragment_state.xml" value="0.1" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout-sw600dp/fragment_state.xml" value="0.1" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_auth.xml" value="0.152" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_auth1.xml" value="0.2" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_auth2.xml" value="0.2" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_auth3.xml" value="0.264" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_auth4.xml" value="0.2" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_auth5.xml" value="0.2" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_base.xml" value="0.1703125" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_chat.xml" value="0.20222317229585293" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_happy.xml" value="0.20222317229585293" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_main.xml" value="0.2727272727272727" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_meeting_with_doctor.xml" value="0.264" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_message.xml" value="0.1" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_one_of_state.xml" value="0.43636363636363634" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_other_message.xml" value="0.1" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_reception.xml" value="0.264" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_setup_chat.xml" value="0.152" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_sign_in1.xml" value="0.18177083333333333" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_sign_in_or_auth.xml" value="0.18177083333333333" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_some_person_in_chat.xml" value="0.152" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPath-frontend/app/src/main/res/layout/fragment_state.xml" value="0.16262975778546712" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/drawable-v24/otherPerson.xml" value="0.209" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/drawable/back_of_form_to_auth.xml" value="0.121" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/drawable/back_to_inp_of_auth.xml" value="0.121" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/drawable/but_add.xml" value="0.179" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/drawable/form_for_text.xml" value="0.179" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/drawable/form_to_add_task.xml" value="0.179" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/drawable/frame_for_time.xml" value="0.2545" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout-land/but_add.xml" value="0.2945945945945946" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout-land/fragment_other_message.xml" value="0.12" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_auth1.xml" value="0.1828125" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_auth2.xml" value="0.1359375" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_auth3.xml" value="0.1828125" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_auth4.xml" value="0.1828125" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_auth5.xml" value="0.264" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_chat.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_form_to_add_task.xml" value="0.2" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_happy.xml" value="0.136" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_main.xml" value="0.11875" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_meeting_with_doctor.xml" value="0.152" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_message.xml" value="0.264" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_oms_and_dms.xml" value="0.1828125" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_one_of_state.xml" value="0.1828125" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_other_message.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_profile_of_doctor.xml" value="0.1828125" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_profile_of_patient.xml" value="0.2" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_sign_in1.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-chat/app/src/main/res/layout/fragment_who_are_you.xml" value="0.1" />
+        <entry key="..\:/Users/playe/AndroidStudioProjects/PsyPlan-task/app/src/main/res/layout/fragment_sign_in1.xml" value="0.1484375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

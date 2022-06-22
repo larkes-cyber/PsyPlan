@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_auth1.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_auth1.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_auth4.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_auth4.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_state.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_who_are_you.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_who_are_you.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_chat.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_base.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_base.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile_of_patient.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_profile_of_patient.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_sign_in_or_auth.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_sign_in_or_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_meeting_with_doctor.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_meeting_with_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_auth5.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_auth5.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile_of_doctor.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_profile_of_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_one_of_state.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_one_of_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_sign_in1.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_sign_in1.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_form_to_add_task.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_form_to_add_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_auth2.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_auth2.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_happy.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_happy.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_auth.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_message.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_empty.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_empty.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_oms_and_dms.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_oms_and_dms.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_main.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_some_person_in_chat.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_some_person_in_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_auth3.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_auth3.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_setup_chat.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_setup_chat.xml"
+    }
+]

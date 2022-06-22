@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_of_auth3"
+    tools:context=".presentation.fragment.AuthFragment3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_of_form_to_auth"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monster"
+                    android:text="Здравствуйте, "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monsterbig"
+                    android:text="Иван!"
+                    android:id="@+id/text"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monster"
+                android:text="Заполните
+небольшую анкету:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_to_inp_of_auth"
+                android:textColor="@color/forContinueButton"
+                android:hint="Дата рождения"
+                android:inputType="date"
+                android:id="@+id/birth"
+                android:maxLength="10"
+                android:textColorHint="@color/forContinueButton"
+                android:textSize="16sp"
+                android:fontFamily="@font/monster"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingTop="17dp"
+                android:paddingBottom="17dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/hill"
+                android:background="@drawable/back_to_inp_of_auth"
+                android:textColor="@color/forContinueButton"
+                android:hint="Ваши заболевания: F1 F4"
+                android:textColorHint="@color/forContinueButton"
+                android:textSize="16sp"
+                android:fontFamily="@font/monster"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingTop="17dp"
+                android:paddingBottom="17dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monster"
+                android:id="@+id/error"
+                android:visibility="gone"
+                android:text="Некорректные данные"
+                android:textColor="#DFA1A1"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-5dp"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/but_plus"
+                        android:src="@drawable/plus"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/monster"
+                        android:text="Добавить
+                        препарат"
+                        android:textColor="@color/forContinueButton"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.8"
+                    >
+                    <ImageButton
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/but_plus"
+                        android:src="@drawable/arr"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/monster"
+                        android:text="продолжить"
+                        android:textColor="@color/forContinueButton"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

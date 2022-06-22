@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\fragment_state.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout-land\\fragment_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\fragment_other_message.xml",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout-land\\fragment_other_message.xml"
+    }
+]
