@@ -1,10 +1,7 @@
 package lolka.example.PsyPath.data.repository
 
 import android.util.Log
-import lolka.example.PsyPath.data.retrofit.model.PatientDataRetrofit
-import lolka.example.PsyPath.data.retrofit.model.RetrofitLogin
-import lolka.example.PsyPath.data.retrofit.model.RetrofitSomeData
-import lolka.example.PsyPath.data.retrofit.model.RetrofitTask
+import lolka.example.PsyPath.data.retrofit.model.*
 import lolka.example.PsyPath.domain.repository.UserRepository
 import lolka.example.PsyPath.data.retrofit.repository.RetrofitRepository
 import lolka.example.PsyPath.data.storage.Service
@@ -13,6 +10,7 @@ import lolka.example.PsyPath.data.storage.models.SessionStorage
 import lolka.example.PsyPath.data.storage.models.SomeDataStorage
 import lolka.example.PsyPath.data.storage.models.TaskStorage
 import lolka.example.PsyPath.domain.model.*
+import kotlin.math.log
 
 class UserRepositoryData(
     private val service: Service,
@@ -160,12 +158,18 @@ class UserRepositoryData(
 
     }
 
-    override suspend fun checkUser(login: Login): String {
-       val resp = retrofitRepository.checkUser(RetrofitLogin(
-            login.login
-        ))
 
-        return resp.body().toString()
+
+    override suspend fun checkUser(login: Login): Session {
+       val resp = retrofitRepository.checkUser(RetrofitLogin(
+           login = login.login,
+           password = login.password
+       ))
+
+        return Session(
+            session = resp.body()!!.session,
+            role = resp. body()!!.role
+        )
     }
 
 

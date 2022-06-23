@@ -40,16 +40,16 @@
         "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\drawable\\back_of_auth1.png"
     },
     {
-        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\drawable_p6.png.flat",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\drawable\\p6.png"
     },
     {
         "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\drawable_back_of_main.png.flat",
         "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\drawable\\back_of_main.png"
     },
     {
-        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\drawable_p6.png.flat",
-        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\drawable\\p6.png"
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\drawable_arr.png.flat",
@@ -68,16 +68,16 @@
         "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\drawable\\frame_for_time.xml"
     },
     {
-        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\drawable_but_plus.xml.flat",
-        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\drawable\\but_plus.xml"
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_setup_chat.xml.flat",
         "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\layout\\fragment_setup_chat.xml"
     },
     {
-        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\drawable_but_plus.xml.flat",
+        "source": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\src\\main\\res\\drawable\\but_plus.xml"
     },
     {
         "merged": "C:\\Users\\playe\\AndroidStudioProjects\\PsyPlan-task\\app\\build\\intermediates\\merged_res\\debug\\drawable_back_to_inp_of_auth.xml.flat",

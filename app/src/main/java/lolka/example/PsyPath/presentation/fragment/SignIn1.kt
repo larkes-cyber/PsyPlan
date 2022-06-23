@@ -14,6 +14,7 @@ import androidx.navigation.findNavController
 import kotlinx.coroutines.launch
 import lolka.example.PsyPath.R
 import lolka.example.PsyPath.domain.model.Login
+import lolka.example.PsyPath.domain.model.Session
 import lolka.example.PsyPath.presentation.viewmodel.SignInViewModel
 import lolka.example.PsyPath.presentation.viewmodel.SignInViewModelFactory
 import lolka.example.PsyPath.presentation.viewmodel.SignOrAuthViewModel
@@ -56,14 +57,33 @@ class SignIn1 : BaseFragment() {
          but.setOnClickListener {
 
              launch {
-                val resp = wm.check(Login(
-                     login = login.text.toString()
+
+
+                 val resp = wm.check(Login(
+                     login = login.text.toString(),
+                     password = pass.text.toString()
                  ))
-                 if(resp == "true"){
-                     view.findNavController().navigate(R.id.action_signIn1_to_authFragment6)
+               //  Toast.makeText(getActivity()?.getApplicationContext() as lolka.example.PsyPath.App.App,resp.session,Toast.LENGTH_LONG).show()
+
+                 if(resp.session != "None") {
+                     wm.saveSession(
+                         Session(
+                             session = resp.session,
+                             role = resp.role
+                         )
+                     )
+                     view.findNavController().navigate(R.id.action_signIn1_to_emptyFragment)
                  }else{
                      error.visibility = View.VISIBLE
                  }
+
+
+
+//                 if(resp == "true"){
+//                   //  view.findNavController().navigate(R.id.action_signIn1_to_authFragment6)
+//                 }else{
+//                     error.visibility = View.VISIBLE
+//                 }
              }
 
 //             if(pass.text.toString().isEmpty() || login.text.toString().isEmpty()){

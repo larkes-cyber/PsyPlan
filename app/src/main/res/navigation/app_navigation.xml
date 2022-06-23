@@ -234,8 +234,8 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"
-            android:id="@+id/action_signIn1_to_authFragment6"
-            app:destination="@id/authFragment6" />
+            android:id="@+id/action_signIn1_to_emptyFragment"
+            app:destination="@id/emptyFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"

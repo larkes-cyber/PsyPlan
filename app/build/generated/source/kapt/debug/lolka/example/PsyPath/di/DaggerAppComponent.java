@@ -133,7 +133,7 @@ public final class DaggerAppComponent implements AppComponent {
   }
 
   private SignInViewModelFactory signInViewModelFactory() {
-    return AppModule_ProvideSignInViewModelFactoryFactory.provideSignInViewModelFactory(appModule, useCheckUser());
+    return AppModule_ProvideSignInViewModelFactoryFactory.provideSignInViewModelFactory(appModule, useCheckUser(), useSaveSession());
   }
 
   @Override

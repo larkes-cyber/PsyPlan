@@ -24,6 +24,6 @@ interface UserRepository {
     suspend fun saveSession(session: Session)
     suspend fun getSession():Session
 
-    suspend fun checkUser(login: Login):String
+    suspend fun checkUser(login: Login):Session
 
 }

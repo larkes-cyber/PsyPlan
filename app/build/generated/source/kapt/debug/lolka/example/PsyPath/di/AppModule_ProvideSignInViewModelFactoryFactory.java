@@ -6,6 +6,7 @@ import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 import javax.inject.Provider;
 import lolka.example.PsyPath.domain.usecase.UseCheckUser;
+import lolka.example.PsyPath.domain.usecase.UseSaveSession;
 import lolka.example.PsyPath.presentation.viewmodel.SignInViewModelFactory;
 
 @DaggerGenerated
@@ -18,24 +19,29 @@ public final class AppModule_ProvideSignInViewModelFactoryFactory implements Fac
 
   private final Provider<UseCheckUser> useCheckUserProvider;
 
+  private final Provider<UseSaveSession> useSaveSessionProvider;
+
   public AppModule_ProvideSignInViewModelFactoryFactory(AppModule module,
-      Provider<UseCheckUser> useCheckUserProvider) {
+      Provider<UseCheckUser> useCheckUserProvider,
+      Provider<UseSaveSession> useSaveSessionProvider) {
     this.module = module;
     this.useCheckUserProvider = useCheckUserProvider;
+    this.useSaveSessionProvider = useSaveSessionProvider;
   }
 
   @Override
   public SignInViewModelFactory get() {
-    return provideSignInViewModelFactory(module, useCheckUserProvider.get());
+    return provideSignInViewModelFactory(module, useCheckUserProvider.get(), useSaveSessionProvider.get());
   }
 
   public static AppModule_ProvideSignInViewModelFactoryFactory create(AppModule module,
-      Provider<UseCheckUser> useCheckUserProvider) {
-    return new AppModule_ProvideSignInViewModelFactoryFactory(module, useCheckUserProvider);
+      Provider<UseCheckUser> useCheckUserProvider,
+      Provider<UseSaveSession> useSaveSessionProvider) {
+    return new AppModule_ProvideSignInViewModelFactoryFactory(module, useCheckUserProvider, useSaveSessionProvider);
   }
 
   public static SignInViewModelFactory provideSignInViewModelFactory(AppModule instance,
-      UseCheckUser useCheckUser) {
-    return Preconditions.checkNotNullFromProvides(instance.provideSignInViewModelFactory(useCheckUser));
+      UseCheckUser useCheckUser, UseSaveSession useSaveSession) {
+    return Preconditions.checkNotNullFromProvides(instance.provideSignInViewModelFactory(useCheckUser, useSaveSession));
   }
 }

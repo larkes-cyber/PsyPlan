@@ -60,10 +60,12 @@ class AppModule(val context: Context) {
 
     @Provides
     fun provideSignInViewModelFactory(
-        useCheckUser: UseCheckUser
+        useCheckUser: UseCheckUser,
+        useSaveSession: UseSaveSession
     ):SignInViewModelFactory{
         return SignInViewModelFactory(
-            useCheckUser = useCheckUser
+            useCheckUser = useCheckUser,
+            useSaveSession = useSaveSession
         )
     }
 

@@ -26,10 +26,10 @@ interface RetrofitApi {
     ):Response<PatientDataResponse>
 
     @Headers("Content-Type: application/json")
-    @POST("/api/cheak_user")
+    @POST("/api/log")
     suspend fun checkUser(
         @Body retrofitLogin: RetrofitLogin
-    ):Response<String>
+    ):Response<RetrofitSession>
 
     @Headers("Content-Type: application/json")
     @POST("/reg/add_task")

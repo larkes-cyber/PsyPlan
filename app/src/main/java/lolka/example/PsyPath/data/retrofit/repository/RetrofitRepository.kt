@@ -22,7 +22,7 @@ class RetrofitRepository: RetrofitInterface {
         return RetrofitInstance().api.pushTask(props)
     }
 
-    override suspend fun checkUser(props: RetrofitLogin): Response<String> {
+    override suspend fun checkUser(props: RetrofitLogin): Response<RetrofitSession> {
         return RetrofitInstance().api.checkUser(props)
     }
 
