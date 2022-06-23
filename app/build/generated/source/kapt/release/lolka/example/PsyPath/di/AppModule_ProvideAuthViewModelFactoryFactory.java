@@ -7,6 +7,7 @@ import dagger.internal.Preconditions;
 import javax.inject.Provider;
 import lolka.example.PsyPath.domain.usecase.UseInsertPatientDataToDatabase;
 import lolka.example.PsyPath.domain.usecase.UsePushPatientDataToServer;
+import lolka.example.PsyPath.domain.usecase.UseSaveSession;
 import lolka.example.PsyPath.presentation.viewmodel.AuthViewModelFactory;
 
 @DaggerGenerated
@@ -21,28 +22,34 @@ public final class AppModule_ProvideAuthViewModelFactoryFactory implements Facto
 
   private final Provider<UseInsertPatientDataToDatabase> useInsertPatientDataToDatabaseProvider;
 
+  private final Provider<UseSaveSession> useSaveSessionProvider;
+
   public AppModule_ProvideAuthViewModelFactoryFactory(AppModule module,
       Provider<UsePushPatientDataToServer> usePushPatientDataToServerProvider,
-      Provider<UseInsertPatientDataToDatabase> useInsertPatientDataToDatabaseProvider) {
+      Provider<UseInsertPatientDataToDatabase> useInsertPatientDataToDatabaseProvider,
+      Provider<UseSaveSession> useSaveSessionProvider) {
     this.module = module;
     this.usePushPatientDataToServerProvider = usePushPatientDataToServerProvider;
     this.useInsertPatientDataToDatabaseProvider = useInsertPatientDataToDatabaseProvider;
+    this.useSaveSessionProvider = useSaveSessionProvider;
   }
 
   @Override
   public AuthViewModelFactory get() {
-    return provideAuthViewModelFactory(module, usePushPatientDataToServerProvider.get(), useInsertPatientDataToDatabaseProvider.get());
+    return provideAuthViewModelFactory(module, usePushPatientDataToServerProvider.get(), useInsertPatientDataToDatabaseProvider.get(), useSaveSessionProvider.get());
   }
 
   public static AppModule_ProvideAuthViewModelFactoryFactory create(AppModule module,
       Provider<UsePushPatientDataToServer> usePushPatientDataToServerProvider,
-      Provider<UseInsertPatientDataToDatabase> useInsertPatientDataToDatabaseProvider) {
-    return new AppModule_ProvideAuthViewModelFactoryFactory(module, usePushPatientDataToServerProvider, useInsertPatientDataToDatabaseProvider);
+      Provider<UseInsertPatientDataToDatabase> useInsertPatientDataToDatabaseProvider,
+      Provider<UseSaveSession> useSaveSessionProvider) {
+    return new AppModule_ProvideAuthViewModelFactoryFactory(module, usePushPatientDataToServerProvider, useInsertPatientDataToDatabaseProvider, useSaveSessionProvider);
   }
 
   public static AuthViewModelFactory provideAuthViewModelFactory(AppModule instance,
       UsePushPatientDataToServer usePushPatientDataToServer,
-      UseInsertPatientDataToDatabase useInsertPatientDataToDatabase) {
-    return Preconditions.checkNotNullFromProvides(instance.provideAuthViewModelFactory(usePushPatientDataToServer, useInsertPatientDataToDatabase));
+      UseInsertPatientDataToDatabase useInsertPatientDataToDatabase,
+      UseSaveSession useSaveSession) {
+    return Preconditions.checkNotNullFromProvides(instance.provideAuthViewModelFactory(usePushPatientDataToServer, useInsertPatientDataToDatabase, useSaveSession));
   }
 }

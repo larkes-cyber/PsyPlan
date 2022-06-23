@@ -5,6 +5,7 @@ import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 import javax.inject.Provider;
+import lolka.example.PsyPath.domain.usecase.UseGetSession;
 import lolka.example.PsyPath.domain.usecase.UseGetTasksFromDatabase;
 import lolka.example.PsyPath.domain.usecase.UseInsertTaskToDatabase;
 import lolka.example.PsyPath.presentation.viewmodel.StateViewModelFactory;
@@ -21,28 +22,33 @@ public final class AppModule_ProvideStateViewModelFactoryFactory implements Fact
 
   private final Provider<UseGetTasksFromDatabase> useGetTasksFromDatabaseProvider;
 
+  private final Provider<UseGetSession> useGetSessionProvider;
+
   public AppModule_ProvideStateViewModelFactoryFactory(AppModule module,
       Provider<UseInsertTaskToDatabase> useInsertTaskToDatabaseProvider,
-      Provider<UseGetTasksFromDatabase> useGetTasksFromDatabaseProvider) {
+      Provider<UseGetTasksFromDatabase> useGetTasksFromDatabaseProvider,
+      Provider<UseGetSession> useGetSessionProvider) {
     this.module = module;
     this.useInsertTaskToDatabaseProvider = useInsertTaskToDatabaseProvider;
     this.useGetTasksFromDatabaseProvider = useGetTasksFromDatabaseProvider;
+    this.useGetSessionProvider = useGetSessionProvider;
   }
 
   @Override
   public StateViewModelFactory get() {
-    return provideStateViewModelFactory(module, useInsertTaskToDatabaseProvider.get(), useGetTasksFromDatabaseProvider.get());
+    return provideStateViewModelFactory(module, useInsertTaskToDatabaseProvider.get(), useGetTasksFromDatabaseProvider.get(), useGetSessionProvider.get());
   }
 
   public static AppModule_ProvideStateViewModelFactoryFactory create(AppModule module,
       Provider<UseInsertTaskToDatabase> useInsertTaskToDatabaseProvider,
-      Provider<UseGetTasksFromDatabase> useGetTasksFromDatabaseProvider) {
-    return new AppModule_ProvideStateViewModelFactoryFactory(module, useInsertTaskToDatabaseProvider, useGetTasksFromDatabaseProvider);
+      Provider<UseGetTasksFromDatabase> useGetTasksFromDatabaseProvider,
+      Provider<UseGetSession> useGetSessionProvider) {
+    return new AppModule_ProvideStateViewModelFactoryFactory(module, useInsertTaskToDatabaseProvider, useGetTasksFromDatabaseProvider, useGetSessionProvider);
   }
 
   public static StateViewModelFactory provideStateViewModelFactory(AppModule instance,
       UseInsertTaskToDatabase useInsertTaskToDatabase,
-      UseGetTasksFromDatabase useGetTasksFromDatabase) {
-    return Preconditions.checkNotNullFromProvides(instance.provideStateViewModelFactory(useInsertTaskToDatabase, useGetTasksFromDatabase));
+      UseGetTasksFromDatabase useGetTasksFromDatabase, UseGetSession useGetSession) {
+    return Preconditions.checkNotNullFromProvides(instance.provideStateViewModelFactory(useInsertTaskToDatabase, useGetTasksFromDatabase, useGetSession));
   }
 }

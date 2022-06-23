@@ -27,7 +27,7 @@ public abstract interface RetrofitApi {
     kotlin.coroutines.Continuation<? super retrofit2.Response<lolka.example.PsyPath.data.retrofit.model.PatientDataResponse>> continuation);
     
     @org.jetbrains.annotations.Nullable()
-    @retrofit2.http.POST(value = "/api/reg/patient")
+    @retrofit2.http.POST(value = "/api/cheak_user")
     @retrofit2.http.Headers(value = {"Content-Type: application/json"})
     public abstract java.lang.Object checkUser(@org.jetbrains.annotations.NotNull()
     @retrofit2.http.Body()

@@ -10,21 +10,27 @@ import lolka.example.PsyPath.data.storage.database_for_goals.repository.DataBase
 import lolka.example.PsyPath.data.storage.database_for_goals.repository.DataBaseRepository_MembersInjector;
 import lolka.example.PsyPath.data.storage.user_data.PatientData;
 import lolka.example.PsyPath.domain.repository.UserRepository;
+import lolka.example.PsyPath.domain.usecase.UseCheckUser;
 import lolka.example.PsyPath.domain.usecase.UseGetPatientDataFromDatabase;
+import lolka.example.PsyPath.domain.usecase.UseGetSession;
 import lolka.example.PsyPath.domain.usecase.UseGetTasksFromDatabase;
 import lolka.example.PsyPath.domain.usecase.UseInsertPatientDataToDatabase;
 import lolka.example.PsyPath.domain.usecase.UseInsertTaskToDatabase;
 import lolka.example.PsyPath.domain.usecase.UsePushPatientDataToServer;
+import lolka.example.PsyPath.domain.usecase.UseSaveSession;
 import lolka.example.PsyPath.presentation.fragment.AuthFragment;
 import lolka.example.PsyPath.presentation.fragment.AuthFragment_MembersInjector;
 import lolka.example.PsyPath.presentation.fragment.ProfileOfPatientFragment;
 import lolka.example.PsyPath.presentation.fragment.ProfileOfPatientFragment_MembersInjector;
+import lolka.example.PsyPath.presentation.fragment.SignIn1;
+import lolka.example.PsyPath.presentation.fragment.SignIn1_MembersInjector;
 import lolka.example.PsyPath.presentation.fragment.SignInOrAuth;
 import lolka.example.PsyPath.presentation.fragment.SignInOrAuth_MembersInjector;
 import lolka.example.PsyPath.presentation.fragment.StateFragment;
 import lolka.example.PsyPath.presentation.fragment.StateFragment_MembersInjector;
 import lolka.example.PsyPath.presentation.viewmodel.AuthViewModelFactory;
 import lolka.example.PsyPath.presentation.viewmodel.PatientProfileViewModelFactory;
+import lolka.example.PsyPath.presentation.viewmodel.SignInViewModelFactory;
 import lolka.example.PsyPath.presentation.viewmodel.SignOrAuthViewModelFactory;
 import lolka.example.PsyPath.presentation.viewmodel.StateViewModelFactory;
 
@@ -86,8 +92,12 @@ public final class DaggerAppComponent implements AppComponent {
     return DomainModule_ProvideInsertPatientDataToDatabaseFactory.provideInsertPatientDataToDatabase(domainModule, userRepository());
   }
 
+  private UseSaveSession useSaveSession() {
+    return DomainModule_ProvideSaveSessionFactory.provideSaveSession(domainModule, userRepository());
+  }
+
   private AuthViewModelFactory authViewModelFactory() {
-    return AppModule_ProvideAuthViewModelFactoryFactory.provideAuthViewModelFactory(appModule, usePushPatientDataToServer(), useInsertPatientDataToDatabase());
+    return AppModule_ProvideAuthViewModelFactoryFactory.provideAuthViewModelFactory(appModule, usePushPatientDataToServer(), useInsertPatientDataToDatabase(), useSaveSession());
   }
 
   private UseGetPatientDataFromDatabase useGetPatientDataFromDatabase() {
@@ -110,8 +120,20 @@ public final class DaggerAppComponent implements AppComponent {
     return DomainModule_ProvideGetTasksFromDatabaseFactory.provideGetTasksFromDatabase(domainModule, userRepository());
   }
 
+  private UseGetSession useGetSession() {
+    return DomainModule_ProvideGetSessionFactory.provideGetSession(domainModule, userRepository());
+  }
+
   private StateViewModelFactory stateViewModelFactory() {
-    return AppModule_ProvideStateViewModelFactoryFactory.provideStateViewModelFactory(appModule, useInsertTaskToDatabase(), useGetTasksFromDatabase());
+    return AppModule_ProvideStateViewModelFactoryFactory.provideStateViewModelFactory(appModule, useInsertTaskToDatabase(), useGetTasksFromDatabase(), useGetSession());
+  }
+
+  private UseCheckUser useCheckUser() {
+    return DomainModule_ProvideCheckUserFactory.provideCheckUser(domainModule, userRepository());
+  }
+
+  private SignInViewModelFactory signInViewModelFactory() {
+    return AppModule_ProvideSignInViewModelFactoryFactory.provideSignInViewModelFactory(appModule, useCheckUser());
   }
 
   @Override
@@ -139,6 +161,11 @@ public final class DaggerAppComponent implements AppComponent {
     injectStateFragment2(stateFragment);
   }
 
+  @Override
+  public void injectSignInFragment(SignIn1 signIn1) {
+    injectSignIn1(signIn1);
+  }
+
   private DataBaseRepository injectDataBaseRepository2(DataBaseRepository instance) {
     DataBaseRepository_MembersInjector.injectTaskDao(instance, taskDao());
     return instance;
@@ -162,6 +189,11 @@ public final class DaggerAppComponent implements AppComponent {
 
   private StateFragment injectStateFragment2(StateFragment instance) {
     StateFragment_MembersInjector.injectVmFactory(instance, stateViewModelFactory());
+    return instance;
+  }
+
+  private SignIn1 injectSignIn1(SignIn1 instance) {
+    SignIn1_MembersInjector.injectVmFactory(instance, signInViewModelFactory());
     return instance;
   }
 

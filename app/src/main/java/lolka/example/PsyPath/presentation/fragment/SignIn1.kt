@@ -55,12 +55,16 @@ class SignIn1 : BaseFragment() {
 
          but.setOnClickListener {
 
-//             launch {
-//                val resp = wm.check(Login(
-//                     login = login.text.toString()
-//                 ))
-//                 Toast.makeText(getActivity()?.getApplicationContext() as lolka.example.PsyPath.App.App,resp,Toast.LENGTH_LONG).show()
-//             }
+             launch {
+                val resp = wm.check(Login(
+                     login = login.text.toString()
+                 ))
+                 if(resp == "true"){
+                     view.findNavController().navigate(R.id.action_signIn1_to_authFragment6)
+                 }else{
+                     error.visibility = View.VISIBLE
+                 }
+             }
 
 //             if(pass.text.toString().isEmpty() || login.text.toString().isEmpty()){
 //                 error.visibility = View.VISIBLE
