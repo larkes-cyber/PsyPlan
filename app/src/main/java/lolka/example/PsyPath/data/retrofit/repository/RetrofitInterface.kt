@@ -14,4 +14,6 @@ interface RetrofitInterface {
     suspend fun pushTaskToServer(props: RetrofitTask):Response<RetrofitTaskResponse>
 
     suspend fun checkUser(props:RetrofitLogin):Response<RetrofitSession>
+
+    suspend fun getPatientDataFromServer(props:RetrofitSession):Response<RetrofitPatientDataServer>
 }

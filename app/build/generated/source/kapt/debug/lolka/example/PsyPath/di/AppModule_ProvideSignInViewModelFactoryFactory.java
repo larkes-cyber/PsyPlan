@@ -6,6 +6,8 @@ import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 import javax.inject.Provider;
 import lolka.example.PsyPath.domain.usecase.UseCheckUser;
+import lolka.example.PsyPath.domain.usecase.UseGetPatientDataFromServer;
+import lolka.example.PsyPath.domain.usecase.UseInsertPatientDataToDatabase;
 import lolka.example.PsyPath.domain.usecase.UseSaveSession;
 import lolka.example.PsyPath.presentation.viewmodel.SignInViewModelFactory;
 
@@ -21,27 +23,37 @@ public final class AppModule_ProvideSignInViewModelFactoryFactory implements Fac
 
   private final Provider<UseSaveSession> useSaveSessionProvider;
 
+  private final Provider<UseGetPatientDataFromServer> useGetPatientDataFromServerProvider;
+
+  private final Provider<UseInsertPatientDataToDatabase> useInsertPatientDataToDatabaseProvider;
+
   public AppModule_ProvideSignInViewModelFactoryFactory(AppModule module,
-      Provider<UseCheckUser> useCheckUserProvider,
-      Provider<UseSaveSession> useSaveSessionProvider) {
+      Provider<UseCheckUser> useCheckUserProvider, Provider<UseSaveSession> useSaveSessionProvider,
+      Provider<UseGetPatientDataFromServer> useGetPatientDataFromServerProvider,
+      Provider<UseInsertPatientDataToDatabase> useInsertPatientDataToDatabaseProvider) {
     this.module = module;
     this.useCheckUserProvider = useCheckUserProvider;
     this.useSaveSessionProvider = useSaveSessionProvider;
+    this.useGetPatientDataFromServerProvider = useGetPatientDataFromServerProvider;
+    this.useInsertPatientDataToDatabaseProvider = useInsertPatientDataToDatabaseProvider;
   }
 
   @Override
   public SignInViewModelFactory get() {
-    return provideSignInViewModelFactory(module, useCheckUserProvider.get(), useSaveSessionProvider.get());
+    return provideSignInViewModelFactory(module, useCheckUserProvider.get(), useSaveSessionProvider.get(), useGetPatientDataFromServerProvider.get(), useInsertPatientDataToDatabaseProvider.get());
   }
 
   public static AppModule_ProvideSignInViewModelFactoryFactory create(AppModule module,
-      Provider<UseCheckUser> useCheckUserProvider,
-      Provider<UseSaveSession> useSaveSessionProvider) {
-    return new AppModule_ProvideSignInViewModelFactoryFactory(module, useCheckUserProvider, useSaveSessionProvider);
+      Provider<UseCheckUser> useCheckUserProvider, Provider<UseSaveSession> useSaveSessionProvider,
+      Provider<UseGetPatientDataFromServer> useGetPatientDataFromServerProvider,
+      Provider<UseInsertPatientDataToDatabase> useInsertPatientDataToDatabaseProvider) {
+    return new AppModule_ProvideSignInViewModelFactoryFactory(module, useCheckUserProvider, useSaveSessionProvider, useGetPatientDataFromServerProvider, useInsertPatientDataToDatabaseProvider);
   }
 
   public static SignInViewModelFactory provideSignInViewModelFactory(AppModule instance,
-      UseCheckUser useCheckUser, UseSaveSession useSaveSession) {
-    return Preconditions.checkNotNullFromProvides(instance.provideSignInViewModelFactory(useCheckUser, useSaveSession));
+      UseCheckUser useCheckUser, UseSaveSession useSaveSession,
+      UseGetPatientDataFromServer useGetPatientDataFromServer,
+      UseInsertPatientDataToDatabase useInsertPatientDataToDatabase) {
+    return Preconditions.checkNotNullFromProvides(instance.provideSignInViewModelFactory(useCheckUser, useSaveSession, useGetPatientDataFromServer, useInsertPatientDataToDatabase));
   }
 }

@@ -2726,7 +2726,7 @@ int id action_omsAndDmsFragment_to_authFragment32 0x7f090053
 int id action_profileOfPatientFragment_to_mainFragment 0x7f090054
 int id action_setupChatFragment_to_chatFragment 0x7f090055
 int id action_setupChatFragment_to_mainFragment 0x7f090056
-int id action_signIn1_to_authFragment6 0x7f090057
+int id action_signIn1_to_emptyFragment 0x7f090057
 int id action_signInOrAuth_to_authFragment14 0x7f090058
 int id action_signInOrAuth_to_mainFragment 0x7f090059
 int id action_signInOrAuth_to_signIn1 0x7f09005a

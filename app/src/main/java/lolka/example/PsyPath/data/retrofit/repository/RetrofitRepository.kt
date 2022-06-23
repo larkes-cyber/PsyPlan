@@ -26,5 +26,9 @@ class RetrofitRepository: RetrofitInterface {
         return RetrofitInstance().api.checkUser(props)
     }
 
+    override suspend fun getPatientDataFromServer(props: RetrofitSession): Response<RetrofitPatientDataServer> {
+        return RetrofitInstance().api.getPatientDataServer(props)
+    }
+
 
 }

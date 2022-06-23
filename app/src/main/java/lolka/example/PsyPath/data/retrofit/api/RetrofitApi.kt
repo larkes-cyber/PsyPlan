@@ -37,4 +37,11 @@ interface RetrofitApi {
         @Body retrofitPatientData: RetrofitTask
     ):Response<RetrofitTaskResponse>
 
+    @Headers("Content-Type: application/json")
+    @POST("/api/profile/patient")
+    suspend fun getPatientDataServer(
+        @Body session: RetrofitSession
+    ):Response<RetrofitPatientDataServer>
+
+
 }

@@ -12,6 +12,7 @@ import lolka.example.PsyPath.data.storage.user_data.PatientData;
 import lolka.example.PsyPath.domain.repository.UserRepository;
 import lolka.example.PsyPath.domain.usecase.UseCheckUser;
 import lolka.example.PsyPath.domain.usecase.UseGetPatientDataFromDatabase;
+import lolka.example.PsyPath.domain.usecase.UseGetPatientDataFromServer;
 import lolka.example.PsyPath.domain.usecase.UseGetSession;
 import lolka.example.PsyPath.domain.usecase.UseGetTasksFromDatabase;
 import lolka.example.PsyPath.domain.usecase.UseInsertPatientDataToDatabase;
@@ -132,8 +133,12 @@ public final class DaggerAppComponent implements AppComponent {
     return DomainModule_ProvideCheckUserFactory.provideCheckUser(domainModule, userRepository());
   }
 
+  private UseGetPatientDataFromServer useGetPatientDataFromServer() {
+    return DomainModule_ProvideGetPatientDataFromServerFactory.provideGetPatientDataFromServer(domainModule, userRepository());
+  }
+
   private SignInViewModelFactory signInViewModelFactory() {
-    return AppModule_ProvideSignInViewModelFactoryFactory.provideSignInViewModelFactory(appModule, useCheckUser(), useSaveSession());
+    return AppModule_ProvideSignInViewModelFactoryFactory.provideSignInViewModelFactory(appModule, useCheckUser(), useSaveSession(), useGetPatientDataFromServer(), useInsertPatientDataToDatabase());
   }
 
   @Override

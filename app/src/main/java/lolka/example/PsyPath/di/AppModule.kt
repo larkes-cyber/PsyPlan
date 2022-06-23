@@ -61,11 +61,15 @@ class AppModule(val context: Context) {
     @Provides
     fun provideSignInViewModelFactory(
         useCheckUser: UseCheckUser,
-        useSaveSession: UseSaveSession
+        useSaveSession: UseSaveSession,
+        useGetPatientDataFromServer: UseGetPatientDataFromServer,
+        useInsertPatientDataToDatabase: UseInsertPatientDataToDatabase
     ):SignInViewModelFactory{
         return SignInViewModelFactory(
             useCheckUser = useCheckUser,
-            useSaveSession = useSaveSession
+            useSaveSession = useSaveSession,
+            useGetPatientDataFromServer = useGetPatientDataFromServer,
+            useInsertPatientDataToDatabase = useInsertPatientDataToDatabase
         )
     }
 

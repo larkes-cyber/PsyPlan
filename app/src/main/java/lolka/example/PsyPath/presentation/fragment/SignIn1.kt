@@ -72,6 +72,16 @@ class SignIn1 : BaseFragment() {
                              role = resp.role
                          )
                      )
+
+                     Toast.makeText(getActivity()?.getApplicationContext() as lolka.example.PsyPath.App.App,resp.session,Toast.LENGTH_LONG).show()
+                     val data = wm.getPatientData(
+                         Session(
+                             session = resp.session,
+                             role = resp.role
+                       )
+                     )
+                     Toast.makeText(getActivity()?.getApplicationContext() as lolka.example.PsyPath.App.App,data.name,Toast.LENGTH_LONG).show()
+
                      view.findNavController().navigate(R.id.action_signIn1_to_emptyFragment)
                  }else{
                      error.visibility = View.VISIBLE

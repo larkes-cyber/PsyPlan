@@ -26,4 +26,6 @@ interface UserRepository {
 
     suspend fun checkUser(login: Login):Session
 
+    suspend fun getPatientDataFromServer(session: Session):PatientDataServer
+
 }

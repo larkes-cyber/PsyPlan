@@ -172,5 +172,47 @@ class UserRepositoryData(
         )
     }
 
+    override suspend fun getPatientDataFromServer(session: Session): PatientDataServer {
+
+        val data = retrofitRepository.getPatientDataFromServer(
+            RetrofitSession(
+            session = session.session,
+            role = session.role
+         )
+        )
+
+        val pill:MutableList<ElemOfPill> = ArrayList()
+        val spec:MutableList<ElemOfSpec> = ArrayList()
+
+        for(i in 0 until data.body()!!.pill.size){
+            pill.add(
+                ElemOfPill(
+                    id = data.body()!!.pill[i].id,
+                    name = data.body()!!.pill[i].name,
+                    dose = data.body()!!.pill[i].dose
+            ))
+        }
+
+        for(i in 0 until data.body()!!.spec.size){
+            spec.add(
+                ElemOfSpec(
+                    id = data.body()!!.spec[i].id,
+                    name = data.body()!!.spec[i].name,
+                    birthday = data.body()!!.spec[i].birthday
+                ))
+        }
+
+        return PatientDataServer(
+            name = data.body()!!.name,
+            birthday = data.body()!!.birthday,
+            oms = data.body()!!.oms,
+            dms = data.body()!!.dms,
+            disease = data.body()!!.disease,
+            pill = pill,
+            spec = spec
+        )
+
+    }
+
 
 }

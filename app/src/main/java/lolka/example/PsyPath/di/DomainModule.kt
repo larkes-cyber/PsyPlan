@@ -87,4 +87,9 @@ class DomainModule {
             userRepository = userRepository
         )
     }
+
+    @Provides
+    fun provideGetPatientDataFromServer(userRepository: UserRepository):UseGetPatientDataFromServer{
+        return UseGetPatientDataFromServer(userRepository = userRepository)
+    }
 }
